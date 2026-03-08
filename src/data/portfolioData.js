@@ -62,7 +62,7 @@ export const experience = [
     company: "Payas Technologies pvt. ltd.",
     period: "April 2023 - August 2023",
     highlights: [
-      "Enhanced proficiency in Java, Python, and SQL through projects, refining software development skills.",
+      "Enhanced proficiency in Java, Python and React through projects, refining software development skills.",
       "Contributed to development across frontend and backend modules, wrote maintainable code and code reviews.",
       "Actively participated in meetings, offering ideas and support in planning, execution, and issue resolution.",
     ],
