@@ -1,5 +1,7 @@
 function SkillIcon({ title }) {
-  if (title === "Backend") {
+  const key = title.toLowerCase();
+
+  if (key.includes("backend")) {
     return (
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
@@ -10,7 +12,7 @@ function SkillIcon({ title }) {
     );
   }
 
-    if (title === "Frontend") {
+  if (key.includes("frontend")) {
     return (
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
@@ -20,13 +22,35 @@ function SkillIcon({ title }) {
       </svg>
     );
   }
-  
-  if (title === "Database") {
+
+  if (key.includes("database")) {
     return (
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path
           fill="currentColor"
           d="M12 3c-4.97 0-9 1.57-9 3.5S7.03 10 12 10s9-1.57 9-3.5S16.97 3 12 3Zm-9 6v4c0 1.93 4.03 3.5 9 3.5s9-1.57 9-3.5V9c-1.78 1.3-5.07 2-9 2s-7.22-.7-9-2Zm0 6v2.5C3 19.43 7.03 21 12 21s9-1.57 9-3.5V15c-1.78 1.3-5.07 2-9 2s-7.22-.7-9-2Z"
+        />
+      </svg>
+    );
+  }
+
+  if (key.includes("devops") || key.includes("cloud")) {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M6 18h11.5a3.5 3.5 0 0 0 .4-7 5.5 5.5 0 0 0-10.6-1.6A4.4 4.4 0 0 0 6 18Zm6-7 2.8 2.8-1 1-1.1-1.1V20h-1.4v-6.3l-1.1 1.1-1-1L12 11Z"
+        />
+      </svg>
+    );
+  }
+
+  if (key.includes("learning")) {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M3 5.5A2.5 2.5 0 0 1 5.5 3H20v15h-1.2A3.8 3.8 0 0 0 15 21.8H6.5A3.5 3.5 0 0 1 3 18.3V5.5Zm2 0v12.8c0 .8.7 1.5 1.5 1.5h7.8c.3-1.6 1.2-2.8 2.7-3.6V5H5.5A.5.5 0 0 0 5 5.5Zm3.2 2h6.6v1.6H8.2V7.5Zm0 3h6.6v1.6H8.2v-1.6Z"
         />
       </svg>
     );
@@ -81,6 +105,14 @@ function SkillItemIcon({ item }) {
     );
   }
 
+  if (item === "REST APIs") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M7.5 7a2.5 2.5 0 1 0-2.3 3.4h3.6A3.2 3.2 0 0 1 12 8.2h3.8a2.5 2.5 0 1 0 0-1.5H12a3.2 3.2 0 0 1-3.2 2.2H5.2A2.5 2.5 0 0 0 7.5 7Zm9 10a2.5 2.5 0 1 0 2.3-3.4h-3.6A3.2 3.2 0 0 1 12 15.8H8.2a2.5 2.5 0 1 0 0 1.5H12a3.2 3.2 0 0 1 3.2-2.2h3.6A2.5 2.5 0 0 0 16.5 17Z" />
+      </svg>
+    );
+  }
+
   if (item === "HTML") {
     return (
       <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -127,7 +159,15 @@ function SkillItemIcon({ item }) {
     );
   }
 
-  if (item === "MongoDb") {
+  if (item === "SQL") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M12 3c-5 0-9 1.7-9 3.8 0 2.1 4 3.7 9 3.7s9-1.6 9-3.7C21 4.7 17 3 12 3Zm-9 6.3v4.2C3 15.7 7 17.4 12 17.4s9-1.7 9-3.9V9.3c-2 1.4-5.4 2.2-9 2.2s-7-0.8-9-2.2Zm0 6v1.9C3 19.3 7 21 12 21s9-1.7 9-3.8v-1.9c-2 1.4-5.4 2.2-9 2.2s-7-0.8-9-2.2Z" />
+      </svg>
+    );
+  }
+
+  if (item === "MongoDB" || item === "MongoDb") {
     return (
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path fill="currentColor" d="M12 2s3.8 4.6 3.8 9.2c0 3.3-1.8 6.2-3.8 8.8-2-2.6-3.8-5.5-3.8-8.8C8.2 6.6 12 2 12 2Zm0 3.1c-.7 1.2-1.8 3.5-1.8 5.9 0 1.9.8 3.8 1.8 5.4 1-1.6 1.8-3.5 1.8-5.4 0-2.4-1.1-4.7-1.8-5.9Z" />
@@ -168,6 +208,22 @@ function SkillItemIcon({ item }) {
     );
   }
 
+  if (item === "Postman") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9Zm3.8 6.8-1.3 4.7a1.2 1.2 0 0 1-1.6.8l-4.6-1.7a.9.9 0 0 1 0-1.7l4.6-1.7a1.2 1.2 0 0 1 1.6.8l1.3-1.2Z" />
+      </svg>
+    );
+  }
+
+  if (item === "Scalable Spring Boot Design" || item === "Deployment Readiness") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M12 3a8 8 0 1 0 8 8h-2.2A5.8 5.8 0 1 1 12 5.2V3Zm1 4v6l4 2-.9 1.8L11 14V7h2Zm5-3h3v3h-2V6h-1V4Z" />
+      </svg>
+    );
+  }
+
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <circle cx="12" cy="12" r="9" fill="currentColor" />
@@ -179,18 +235,22 @@ function skillTone(item) {
   const map = {
     Java: "tone-java",
     Python: "tone-python",
-    "C++": "tone-cpp",
     "Spring Boot": "tone-spring",
+    "REST APIs": "tone-spring",
     HTML: "tone-html",
     CSS: "tone-css",
     JavaScript: "tone-js",
     React: "tone-react",
+    SQL: "tone-mysql",
     MySQL: "tone-mysql",
-    MongoDb: "tone-mongo",
+    MongoDB: "tone-mongo",
+    Postman: "tone-html",
     "IntelliJ IDEA": "tone-intellij",
     "VS Code": "tone-vscode",
     Git: "tone-git",
     AWS: "tone-aws",
+    "Scalable Spring Boot Design": "tone-spring",
+    "Deployment Readiness": "tone-default",
   };
 
   return map[item] || "tone-default";
@@ -211,6 +271,10 @@ export default function Skills({ skills }) {
             </h4>
             <ul>
               {group.items.map((item) => {
+                if (!item) {
+                  return null;
+                }
+
                 const tone = skillTone(item);
                 return (
                   <li key={item} className="skill-item-row">

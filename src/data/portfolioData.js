@@ -13,10 +13,54 @@ export const profile = {
 };
 
 export const skills = [
-  { title: "Backend", items: ["Java", "Python", "C++", "Spring Boot"] },
-  { title: "Frontend", items: ["HTML", "CSS", "JavaScript", "React"] },
-  { title: "Database", items: ["MySQL", "MongoDb"] },
-  { title: "Tools", items: ["IntelliJ IDEA", "VS Code", "Git", "AWS"] },
+  {
+    title: "Backend",
+    items: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Python",
+    ],
+  },
+  {
+    title: "Frontend",
+    items: [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
+    title: "Databases",
+    items: [
+      "SQL",
+      "MySQL",
+      "MongoDB",
+    ],
+  },
+  {
+    title: "DevOps & Cloud",
+    items: [
+      "Git",
+      "AWS",
+    ],
+  },
+  {
+    title: "Tools",
+    items: [
+      "IntelliJ IDEA",
+      "VS Code",
+      "Postman",
+    ],
+  },
+  {
+    title: "Currently Learning",
+    items: [
+      "Scalable Spring Boot Design",
+      "Deployment Readiness",
+    ],
+  },
 ];
 
 export const projects = [
@@ -59,12 +103,14 @@ export const experience = [
   // },
   {
     role: "Software Developer Intern",
-    company: "Payas Technologies pvt. ltd.",
-    period: "April 2023 - August 2023",
+    company: "Payas Technologies Pvt. Ltd., Pune",
+    period: "Apr 2023 - Aug 2023",
     highlights: [
-      "Enhanced proficiency in Java, Python and React through projects, refining software development skills.",
-      "Contributed to development across frontend and backend modules, wrote maintainable code and code reviews.",
-      "Actively participated in meetings, offering ideas and support in planning, execution, and issue resolution.",
+      "Supported senior developers in building and testing web applications, improving delivery quality and reliability.",
+      "Contributed to frontend and backend modules using Java and React, with focus on maintainable, review-ready code.",
+      "Learned REST API development and debugging workflows to resolve integration issues efficiently.",
+      "Worked closely with team members in planning and troubleshooting to fix software defects on time.",
+      "Gained hands-on experience with the software development lifecycle and version control workflows in Git.",
     ],
   },
 ];
@@ -76,11 +122,6 @@ export const aboutText =
 
 export const aboutNote =
   "I love to code & learn new technologies.";
-
-export const aboutLearning = [
-  "Designing scalable Spring Boot applications.",
-  "Deployment and production-readiness practices.",
-];
 
 export const aboutWorkStyle = [
   "Write clear, maintainable, and testable code.",

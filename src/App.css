@@ -407,10 +407,15 @@ main {
   gap: 1.2rem;
 }
 
-.about-main,
-.about-side {
+.about-main {
   display: grid;
   gap: 0.65rem;
+}
+
+.about-side {
+  display: grid;
+  align-content: start;
+  gap: 2.8rem;
 }
 
 .about-intro,
@@ -472,6 +477,58 @@ main {
   color: var(--text);
 }
 
+.about-avatar {
+  display: grid;
+  place-items: center;
+  padding: 0 0.85rem 0.15rem;
+  margin-top: -0.9rem;
+  overflow: hidden;
+}
+
+.about-avatar svg {
+  width: min(100%, 220px);
+  height: auto;
+}
+
+.about-avatar .avatar-frame {
+  fill: rgba(10, 10, 12, 0.9);
+  stroke: rgba(139, 92, 246, 0.35);
+  stroke-width: 1.4;
+}
+
+.about-avatar .avatar-glow {
+  fill: rgba(139, 92, 246, 0.16);
+}
+
+.about-avatar .avatar-head {
+  fill: #c4b5fd;
+}
+
+.about-avatar .avatar-body {
+  fill: #8b5cf6;
+}
+
+.about-avatar .avatar-laptop {
+  fill: #111827;
+  stroke: rgba(196, 181, 253, 0.32);
+  stroke-width: 1;
+}
+
+.about-avatar .avatar-base {
+  fill: rgba(167, 139, 250, 0.8);
+}
+
+.about-avatar .avatar-dot,
+.about-avatar .avatar-chip {
+  fill: rgba(196, 181, 253, 0.85);
+}
+
+.about-avatar .avatar-line {
+  stroke: rgba(196, 181, 253, 0.7);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
 .skills-grid,
 .project-grid,
 .timeline {
@@ -480,7 +537,7 @@ main {
 }
 
 .skills-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .project-grid {
@@ -550,6 +607,15 @@ main {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.skills-grid .card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-grid .card li + li {
+  margin-top: 0.75rem;
 }
 
 .skill-mini-logo {

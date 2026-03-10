@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import {
-  aboutLearning,
   aboutNote,
   aboutText,
   aboutWorkStyle,
@@ -32,7 +31,6 @@ export default function App() {
         <About
           aboutText={aboutText}
           aboutNote={aboutNote}
-          aboutLearning={aboutLearning}
           aboutWorkStyle={aboutWorkStyle}
         />
         <Skills skills={skills} />
@@ -41,7 +39,7 @@ export default function App() {
         <Contact profile={profile} />
       </main>
 
-      <Footer name={profile.name} location={profile.location} social={profile.social} />
+      <Footer name={profile.name} social={profile.social} />
     </div>
   );
 }
